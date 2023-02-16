@@ -9,7 +9,7 @@ public partial class Form1 : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("Welcome to SimpliLearn");
+        MessageBox.Show("Welcome ");
     }
 
     private void button1_Click_1(object sender, EventArgs e)
@@ -38,6 +38,16 @@ public partial class Form1 : Form
     }
 
     private void textBox3_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label6_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label8_Click(object sender, EventArgs e)
     {
 
     }
