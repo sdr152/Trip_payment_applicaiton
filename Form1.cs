@@ -18,18 +18,12 @@ public partial class Form1 : Form
     //    MessageBox.Show("Welcome ");
     //}
 
-
     private void label2_Click(object sender, EventArgs e)
     {
 
     }
 
     private void label1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void textBox3_TextChanged(object sender, EventArgs e)
     {
 
     }
@@ -57,7 +51,6 @@ public partial class Form1 : Form
     // Precio Diesel galon
     private void textBox2_TextChanged(object sender, EventArgs e)
     {
-        
         if (double.TryParse(textBox2.Text, out double d) || int.TryParse(textBox2.Text, out int i))
         {
             double precio_dep = Convert.ToDouble(textBox2.Text) * 0.25;
@@ -69,7 +62,16 @@ public partial class Form1 : Form
             textBox3.Clear();
         }
     }
-    
+
+    // Precio depreciacion
+    private void textBox3_TextChanged(object sender, EventArgs e)
+    {
+        if (!Double.TryParse(textBox3.Text, out double d))
+        {
+            textBox3.Clear();
+        }
+    }
+
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
@@ -130,15 +132,6 @@ public partial class Form1 : Form
         }
     }
 
-    // Costo 25 - 50
-    private void textBox13_TextChanged(object sender, EventArgs e)
-    {
-        if (!Double.TryParse(textBox13.Text, out double d))
-        {
-            textBox13.Clear();
-        }
-    }
-
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
     {
@@ -163,6 +156,15 @@ public partial class Form1 : Form
         if (!Double.TryParse(textBox5.Text, out double d))
         {
             textBox5.Clear();
+        }
+    }
+
+    // Costo 25 - 50
+    private void textBox13_TextChanged(object sender, EventArgs e)
+    {
+        if (!Double.TryParse(textBox13.Text, out double d))
+        {
+            textBox13.Clear();
         }
     }
 
