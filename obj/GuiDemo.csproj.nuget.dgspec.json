@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Ramos\\CSharp\\GuiDemo\\GuiDemo.csproj": {}
+    "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\GuiDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Ramos\\CSharp\\GuiDemo\\GuiDemo.csproj": {
+    "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\GuiDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Ramos\\CSharp\\GuiDemo\\GuiDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\GuiDemo.csproj",
         "projectName": "GuiDemo",
-        "projectPath": "C:\\Users\\Samuel Ramos\\CSharp\\GuiDemo\\GuiDemo.csproj",
+        "projectPath": "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\GuiDemo.csproj",
         "packagesPath": "C:\\Users\\Samuel Ramos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Ramos\\CSharp\\GuiDemo\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Samuel Ramos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
