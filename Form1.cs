@@ -77,6 +77,15 @@ public partial class Form1 : Form
         {
             textBox11.Clear();
         }
+        else
+        {
+            double num25 = Convert.ToDouble(textBox11.Text) * 0.9;
+            double num50 = Convert.ToDouble(textBox11.Text) * 0.7;
+            double num100 = 9 * 1.6;
+            textBox10.Text = num25.ToString();
+            textBox9.Text = num50.ToString();
+            textBox8.Text = num100.ToString();
+        }
     }
 
     // Rendimiento 25%
@@ -86,23 +95,42 @@ public partial class Form1 : Form
         {
             textBox10.Clear();
         }
+        else
+        {
+            double num = Convert.ToDouble(textBox11.Text) * 0.9;
+            textBox10.Text = num.ToString();
+        }
     }
+
+    // Rendimiento 50%
     private void textBox9_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox9.Text, out double d))
         {
             textBox9.Clear();
         }
-    }
-
-    private void textBox5_TextChanged(object sender, EventArgs e)
-    {
-        if (!Double.TryParse(textBox5.Text, out double d))
+        else
         {
-            textBox5.Clear();
+            double num = Convert.ToDouble(textBox11.Text) * 0.7;
+            textBox9.Text = num.ToString();
         }
     }
 
+    // Rendimiento 100%
+    private void textBox8_TextChanged(object sender, EventArgs e)
+    {
+        if (!Double.TryParse(textBox8.Text, out double d))
+        {
+            textBox8.Clear();
+        }
+        else
+        {
+            double num = Convert.ToDouble(textBox11.Text) * 1.6;
+            textBox11.Text = num.ToString();
+        }
+    }
+
+    // Costo 25 - 50
     private void textBox13_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox13.Text, out double d))
@@ -111,14 +139,7 @@ public partial class Form1 : Form
         }
     }
 
-    private void textBox8_TextChanged(object sender, EventArgs e)
-    {
-        if (!Double.TryParse(textBox8.Text, out double d))
-        {
-            textBox8.Clear();
-        }
-    }
-
+    // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox7.Text, out double d))
@@ -127,6 +148,7 @@ public partial class Form1 : Form
         }
     }
 
+    // Costo 50% Retorno 0
     private void textBox6_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox6.Text, out double d))
@@ -135,6 +157,16 @@ public partial class Form1 : Form
         }
     }
 
+    // Cost a mas de 50% retorno 0
+    private void textBox5_TextChanged(object sender, EventArgs e)
+    {
+        if (!Double.TryParse(textBox5.Text, out double d))
+        {
+            textBox5.Clear();
+        }
+    }
+
+    // Costo operario por dia
     private void textBox4_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox4.Text, out double d))
@@ -143,6 +175,7 @@ public partial class Form1 : Form
         }
     }
 
+    // Costo comida por dia
     private void textBox15_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox15.Text, out double d))
@@ -151,6 +184,7 @@ public partial class Form1 : Form
         }
     }
 
+    // Cobrar 0 - 25
     private void textBox14_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox14.Text, out double d))
@@ -159,11 +193,20 @@ public partial class Form1 : Form
         }
     }
 
+    // Costo 50 - 100
     private void textBox12_TextChanged(object sender, EventArgs e)
     {
         if (!Double.TryParse(textBox12.Text, out double d))
         {
             textBox12.Clear();
+        }
+    }
+
+    private void textBox16_TextChanged(object sender, EventArgs e)
+    {
+        if (!double.TryParse(textBox16.Text, out double d))
+        {
+            textBox16.Clear();
         }
     }
 }

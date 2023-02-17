@@ -60,6 +60,9 @@ partial class Form1
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -351,11 +354,40 @@ partial class Form1
             this.textBox15.TabIndex = 14;
             this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(741, 400);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(125, 27);
+            this.textBox16.TabIndex = 15;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(488, 407);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 20);
+            this.label17.TabIndex = 16;
+            this.label17.Text = "Descuento: ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(872, 407);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(21, 20);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "%";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 649);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
@@ -429,4 +461,7 @@ partial class Form1
     private TextBox textBox13;
     private TextBox textBox14;
     private TextBox textBox15;
+    private TextBox textBox16;
+    private Label label17;
+    private Label label18;
 }
