@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\Samuel Ramos\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Samuel Ramos\\CSharp\\Trip_payment_application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Samuel Ramos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
