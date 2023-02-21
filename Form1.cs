@@ -13,6 +13,15 @@ public partial class Form1 : Form
         textBox1.Text = "0.0";
         textBox2.Text = "0.0";
         textBox3.Text = "0.0";
+        double rend_descargado = 25.6;
+        double rend25 = 0.9 * rend_descargado;
+        double rend50 = 0.7 * rend_descargado;
+        double rend100 = 9.0 * 1.6;
+
+        textBox11.Text = rend_descargado.ToString();
+        textBox10.Text = rend25.ToString();
+        textBox9.Text = rend50.ToString();
+        textBox8.Text = rend100.ToString();
     }
     private void button1_Click_1(object sender, EventArgs e)
     {
@@ -58,23 +67,23 @@ public partial class Form1 : Form
             textBox13.Text = costo_comida.ToString();
 
             // Actualizar Parametros de Rendimiento
-            double rend_descargado = 25.6;
-            double rend25 = 0.9 * rend_descargado;
-            double rend50 = 0.7 * rend_descargado;
-            double rend100 = 9.0 * 1.6;
-            textBox11.Text = rend_descargado.ToString();
-            textBox10.Text = rend25.ToString();
-            textBox9.Text = rend50.ToString();
-            textBox8.Text = rend100.ToString();
+            
 
-            
-            //double precio_dep = Convert.ToDouble(textBox3.Text);
-            
+            textBox2_TextChanged(sender, e);
+            double precio_dep = Convert.ToDouble(textBox2.Text);
+            textBox3_TextChanged(sender, e);
+            double precio_diesel = Convert.ToDouble(textBox3.Text);
+
+
+         
             //if (textBox2.Text != null && textBox3.Text != null) {
                 
-            //    double cost25 = ((Convert.ToDouble(trayecto) / rend25) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
-            //    double cost50 = ((Convert.ToDouble(trayecto) / rend50) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
-            //    double cost100 = ((Convert.ToDouble(trayecto) / rend100) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
+                //double cost25 = ((Convert.ToDouble(trayecto) / rend25) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
+                //double cost50 = ((Convert.ToDouble(trayecto) / rend50) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
+                //double cost100 = ((Convert.ToDouble(trayecto) / rend100) * (precio_diesel + precio_dep) + Convert.ToDouble(trayecto) / rend_descargado * (precio_diesel + precio_dep));
+                
+                //textBox7.Text = cost25.ToString();
+                
             //}
         }   
     }
@@ -85,9 +94,9 @@ public partial class Form1 : Form
         
         if (double.TryParse(textBox2.Text, out double d) || int.TryParse(textBox2.Text, out int i))
         {
-            textBox3_TextChanged(sender, e);
+            ;
             double precio_dep = Convert.ToDouble(textBox2.Text) * 0.25;
-            textBox3.Text = precio_dep.ToString();
+            textBox3.Text = precio_dep.ToString();   
         }
         else
         {
@@ -105,25 +114,7 @@ public partial class Form1 : Form
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
-        if (!Double.TryParse(textBox11.Text, out double d))
-        {
-            textBox11.Text = "0.0";
-        }
-        else
-        {
-            // Actualizar rendimientos
-            
-
-            // Actualizar costos / retornos
-           
-
-            // Actualizar costos totales
-           
-
-            // Actualizar cobros
-            
-
-        }
+        
     }
 
     // Rendimiento 25%
