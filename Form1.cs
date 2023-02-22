@@ -17,8 +17,28 @@ public partial class Form1 : Form
     }
     private void button1_Click_1(object sender, EventArgs e)
     {
-        MessageBox.Show("Button Click");
-  
+        //MessageBox.Show("Button Click");
+        textBox11_TextChanged(sender, e);
+        textBox10_TextChanged(sender, e);
+        textBox9_TextChanged(sender, e);
+        textBox8_TextChanged(sender, e);
+        textBox7_TextChanged(sender, e);
+        textBox6_TextChanged(sender, e);
+        textBox5_TextChanged(sender, e);
+        textBox12_TextChanged(sender, e);
+        textBox13_TextChanged(sender, e);
+        textBox14_TextChanged(sender, e);
+        textBox15_TextChanged(sender, e);
+        textBox4_TextChanged(sender, e);
+        
+        textBox16_TextChanged_1(sender, e);
+        textBox17_TextChanged(sender, e);
+        textBox18_TextChanged(sender, e);
+        textBox19_TextChanged(sender, e);
+        textBox20_TextChanged(sender, e);
+        textBox21_TextChanged(sender, e);
+        textBox22_TextChanged(sender, e);
+
     }
 
     private void label2_Click(object sender, EventArgs e)

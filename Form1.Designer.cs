@@ -118,6 +118,7 @@ partial class Form1
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(277, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
@@ -126,6 +127,7 @@ partial class Form1
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(277, 88);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 27);
@@ -134,6 +136,7 @@ partial class Form1
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(277, 123);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(125, 27);
@@ -232,6 +235,7 @@ partial class Form1
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.Location = new System.Drawing.Point(741, 365);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(125, 27);
@@ -240,6 +244,7 @@ partial class Form1
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.Location = new System.Drawing.Point(741, 117);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(125, 27);
@@ -248,6 +253,7 @@ partial class Form1
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.Location = new System.Drawing.Point(741, 85);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(125, 27);
@@ -256,6 +262,7 @@ partial class Form1
             // 
             // textBox7
             // 
+            this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.Location = new System.Drawing.Point(741, 51);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(125, 27);
@@ -264,6 +271,7 @@ partial class Form1
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.Location = new System.Drawing.Point(277, 283);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(125, 27);
@@ -272,6 +280,7 @@ partial class Form1
             // 
             // textBox9
             // 
+            this.textBox9.BackColor = System.Drawing.Color.White;
             this.textBox9.Location = new System.Drawing.Point(277, 251);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(125, 27);
@@ -280,6 +289,7 @@ partial class Form1
             // 
             // textBox10
             // 
+            this.textBox10.BackColor = System.Drawing.Color.White;
             this.textBox10.Location = new System.Drawing.Point(277, 216);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(125, 27);
@@ -288,6 +298,7 @@ partial class Form1
             // 
             // textBox11
             // 
+            this.textBox11.BackColor = System.Drawing.Color.White;
             this.textBox11.Location = new System.Drawing.Point(277, 181);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(125, 27);
@@ -336,6 +347,7 @@ partial class Form1
             // 
             // textBox12
             // 
+            this.textBox12.BackColor = System.Drawing.Color.White;
             this.textBox12.Location = new System.Drawing.Point(741, 183);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(125, 27);
@@ -344,6 +356,7 @@ partial class Form1
             // 
             // textBox13
             // 
+            this.textBox13.BackColor = System.Drawing.Color.White;
             this.textBox13.Location = new System.Drawing.Point(741, 217);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(125, 27);
@@ -352,6 +365,7 @@ partial class Form1
             // 
             // textBox14
             // 
+            this.textBox14.BackColor = System.Drawing.Color.White;
             this.textBox14.Location = new System.Drawing.Point(741, 293);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(125, 27);
@@ -360,6 +374,7 @@ partial class Form1
             // 
             // textBox15
             // 
+            this.textBox15.BackColor = System.Drawing.Color.White;
             this.textBox15.Location = new System.Drawing.Point(741, 329);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(125, 27);
@@ -413,6 +428,7 @@ partial class Form1
             // 
             // textBox16
             // 
+            this.textBox16.BackColor = System.Drawing.Color.White;
             this.textBox16.Location = new System.Drawing.Point(741, 404);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(125, 27);
@@ -421,6 +437,7 @@ partial class Form1
             // 
             // textBox17
             // 
+            this.textBox17.BackColor = System.Drawing.Color.White;
             this.textBox17.Location = new System.Drawing.Point(741, 437);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(125, 27);
@@ -429,6 +446,7 @@ partial class Form1
             // 
             // textBox18
             // 
+            this.textBox18.BackColor = System.Drawing.Color.White;
             this.textBox18.Location = new System.Drawing.Point(741, 470);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(125, 27);
@@ -437,6 +455,7 @@ partial class Form1
             // 
             // textBox19
             // 
+            this.textBox19.BackColor = System.Drawing.Color.White;
             this.textBox19.Location = new System.Drawing.Point(741, 509);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(125, 27);
@@ -454,6 +473,7 @@ partial class Form1
             // 
             // textBox20
             // 
+            this.textBox20.BackColor = System.Drawing.Color.White;
             this.textBox20.Location = new System.Drawing.Point(741, 543);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(125, 27);
@@ -480,6 +500,7 @@ partial class Form1
             // 
             // textBox21
             // 
+            this.textBox21.BackColor = System.Drawing.Color.White;
             this.textBox21.Location = new System.Drawing.Point(741, 573);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(125, 27);
@@ -488,6 +509,7 @@ partial class Form1
             // 
             // textBox22
             // 
+            this.textBox22.BackColor = System.Drawing.Color.White;
             this.textBox22.Location = new System.Drawing.Point(741, 601);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(125, 27);
@@ -498,6 +520,7 @@ partial class Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1131, 649);
             this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox21);
