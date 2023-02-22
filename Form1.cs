@@ -10,6 +10,8 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
+        textBox18.Enabled = false;
+        
         
     }
     private void button1_Click_1(object sender, EventArgs e)
@@ -45,21 +47,7 @@ public partial class Form1 : Form
         if (!double.TryParse(trayecto, out double d))
         {
             textBox1.Text = "0.0";
-        }
-        else
-        {
-            // Actualizar Costo Operario y Costo Comida
-        
-            double costo_operario = 850.0 / 350.0 * Convert.ToDouble(trayecto);
-            textBox12.Text = costo_operario.ToString();
-
-            double costo_comida = 200.0 / 350.0 * Convert.ToDouble(trayecto);
-            textBox13.Text = costo_comida.ToString();
-
-            // Actualizar Parametros de Rendimiento
-            textBox7_TextChanged(sender, e);
-           
-        }   
+        }  
     }
 
     // Precio Diesel galon
@@ -68,7 +56,6 @@ public partial class Form1 : Form
         
         if (double.TryParse(textBox2.Text, out double d) || int.TryParse(textBox2.Text, out int i))
         {
-
             textBox3_TextChanged(sender, e);   
         }
         else
@@ -114,6 +101,7 @@ public partial class Form1 : Form
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
     {
+        textBox7.AcceptsReturn = true;
         double trayectoria = Convert.ToDouble(textBox1.Text);
         double rend_descargado = Convert.ToDouble(textBox11.Text);
         double rend25 = Convert.ToDouble(textBox10.Text);
@@ -125,48 +113,89 @@ public partial class Form1 : Form
     // Costo 50% Retorno 0
     private void textBox6_TextChanged(object sender, EventArgs e)
     {
-        
+        double trayectoria = Convert.ToDouble(textBox1.Text);
+        double rend_descargado = Convert.ToDouble(textBox11.Text);
+        double rend50 = Convert.ToDouble(textBox9.Text);
+        double precio_diesel = Convert.ToDouble(textBox2.Text);
+        double precio_dep = Convert.ToDouble(textBox3.Text);
+        textBox6.Text = Convert.ToString(trayectoria / rend50 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep));
+
     }
 
     // Cost a mas de 50% retorno 0
     private void textBox5_TextChanged(object sender, EventArgs e)
     {
-        
-    }
-
-    // Costo operario por dia
-    private void textBox4_TextChanged(object sender, EventArgs e)
-    {
-       
-    }
-
-    // Costo comida por dia
-    private void textBox15_TextChanged(object sender, EventArgs e)
-    {
-       
+        double trayectoria = Convert.ToDouble(textBox1.Text);
+        double rend_descargado = Convert.ToDouble(textBox11.Text);
+        double rend100 = Convert.ToDouble(textBox8.Text);
+        double precio_diesel = Convert.ToDouble(textBox2.Text);
+        double precio_dep = Convert.ToDouble(textBox3.Text);
+        textBox5.Text = Convert.ToString(trayectoria / rend100 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep));
     }
 
     // Costo total al 0 - 25%
     private void textBox14_TextChanged(object sender, EventArgs e)
     {
-        
+        double cost25 = Convert.ToDouble(textBox7.Text);
+        double costo_operario = Convert.ToDouble(textBox12.Text);
+        double costo_comida = Convert.ToDouble(textBox13.Text);
+        double costo_total25 = cost25 + costo_operario + costo_comida;
+        textBox14.Text = costo_total25.ToString();
     }
 
     // Costo total al 25 - 50%
-    private void textBox13_TextChanged(object sender, EventArgs e)
+    private void textBox15_TextChanged(object sender, EventArgs e)
     {
-        
+        double cost50 = Convert.ToDouble(textBox6.Text);
+        double costo_operario = Convert.ToDouble(textBox12.Text);
+        double costo_comida = Convert.ToDouble(textBox13.Text);
+        double costo_total25 = cost50 + costo_operario + costo_comida;
+        textBox15.Text = costo_total25.ToString();
     }
 
-    // Costo total mas del 50%
+    // Costo a mas de 50%
+    private void textBox4_TextChanged(object sender, EventArgs e)
+    {
+        double cost100 = Convert.ToDouble(textBox5.Text);
+        double costo_operario = Convert.ToDouble(textBox12.Text);
+        double costo_comida = Convert.ToDouble(textBox13.Text);
+        double costo_total25 = cost100 + costo_operario + costo_comida;
+        textBox4.Text = costo_total25.ToString();
+    }
+
+    // Costo operario por dia
     private void textBox12_TextChanged(object sender, EventArgs e)
     {
-        
+        // Actualizar Costo Operario y Costo Comida
+        double costo_operario = 850.0 / 350.0 * Convert.ToDouble(textBox1.Text);
+        textBox12.Text = costo_operario.ToString();
+    }
+
+    // Costo comida por dia
+    private void textBox13_TextChanged(object sender, EventArgs e)
+    {
+        double costo_comida = 200.0 / 350.0 * Convert.ToDouble(textBox1.Text);
+        textBox13.Text = costo_comida.ToString();
     }
 
     // Cobrar 0 - 25
-    private void textBox16_TextChanged(object sender, EventArgs e)
+    private void textBox16_TextChanged_1(object sender, EventArgs e)
     {
-        
+        double cobro25 = Convert.ToDouble(textBox14.Text) / 0.7;
+        textBox16.Text = cobro25.ToString();
+    }
+
+    private void textBox17_TextChanged(object sender, EventArgs e)
+    {
+        double cobro50 = Convert.ToDouble(textBox15.Text) / 0.7;
+        textBox17.Text = cobro50.ToString();
+        textBox18_TextChanged(sender, e);
+    }
+
+    private void textBox18_TextChanged(object sender, EventArgs e)
+    {
+        double cobro100 = Convert.ToDouble(textBox4.Text) / 0.7;
+        textBox18.Text = cobro100.ToString();
     }
 }
+
