@@ -68,6 +68,13 @@ partial class Form1
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -398,7 +405,7 @@ partial class Form1
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(486, 509);
+            this.label21.Location = new System.Drawing.Point(486, 516);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(86, 20);
             this.label21.TabIndex = 16;
@@ -428,11 +435,77 @@ partial class Form1
             this.textBox18.TabIndex = 20;
             this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
             // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(741, 509);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(125, 27);
+            this.textBox19.TabIndex = 21;
+            this.textBox19.TextChanged += new System.EventHandler(this.textBox19_TextChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(486, 550);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(200, 20);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "Precio descuento por km 25: ";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(741, 543);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(125, 27);
+            this.textBox20.TabIndex = 23;
+            this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(488, 580);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(200, 20);
+            this.label23.TabIndex = 24;
+            this.label23.Text = "Precio descuento por km 50: ";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(488, 608);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(208, 20);
+            this.label24.TabIndex = 25;
+            this.label24.Text = "Precio descuento por km 100: ";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(741, 573);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(125, 27);
+            this.textBox21.TabIndex = 26;
+            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(741, 601);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(125, 27);
+            this.textBox22.TabIndex = 27;
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 649);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox16);
@@ -522,4 +595,11 @@ partial class Form1
     private TextBox textBox16;
     private TextBox textBox17;
     private TextBox textBox18;
+    private TextBox textBox19;
+    private Label label22;
+    private TextBox textBox20;
+    private Label label23;
+    private Label label24;
+    private TextBox textBox21;
+    private TextBox textBox22;
 }

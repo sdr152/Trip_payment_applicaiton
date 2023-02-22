@@ -101,7 +101,6 @@ public partial class Form1 : Form
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
     {
-        textBox7.AcceptsReturn = true;
         double trayectoria = Convert.ToDouble(textBox1.Text);
         double rend_descargado = Convert.ToDouble(textBox11.Text);
         double rend25 = Convert.ToDouble(textBox10.Text);
@@ -185,6 +184,7 @@ public partial class Form1 : Form
         textBox16.Text = cobro25.ToString();
     }
 
+    // Cobrar 25 - 50
     private void textBox17_TextChanged(object sender, EventArgs e)
     {
         double cobro50 = Convert.ToDouble(textBox15.Text) / 0.7;
@@ -192,10 +192,46 @@ public partial class Form1 : Form
         textBox18_TextChanged(sender, e);
     }
 
+    // Cobrar 100
     private void textBox18_TextChanged(object sender, EventArgs e)
     {
         double cobro100 = Convert.ToDouble(textBox4.Text) / 0.7;
         textBox18.Text = cobro100.ToString();
+    }
+    
+    // Descuento
+    private void textBox19_TextChanged(object sender, EventArgs e)
+    {
+        string dsc = textBox19.Text;
+        if (!Double.TryParse(dsc, out double d))
+        {
+            textBox19.Text = "0.0";
+        }
+    }
+
+    // Precio descuento 25
+    private void textBox20_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double cobro25 = Convert.ToDouble(textBox16.Text);
+        double precio_des25 = cobro25 * (1.0 - (dsc / 100));
+        textBox20.Text = precio_des25.ToString();
+    }
+
+    private void textBox21_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double cobro50 = Convert.ToDouble(textBox17.Text);
+        double precio_des25 = cobro50 * (1.0 - (dsc / 100));
+        textBox21.Text = precio_des25.ToString();
+    }
+
+    private void textBox22_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double cobro100 = Convert.ToDouble(textBox18.Text);
+        double precio_des25 = cobro100 * (1.0 - (dsc / 100));
+        textBox22.Text = precio_des25.ToString();
     }
 }
 
