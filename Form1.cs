@@ -11,6 +11,7 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         textBox18.Enabled = false;
+        textBox3.AccessibleDescription = "SAFSDFASDFASDFASDFASDfas";
         
         
     }
@@ -209,7 +210,7 @@ public partial class Form1 : Form
         }
     }
 
-    // Precio descuento 25
+    // Precio25 con descuento
     private void textBox20_TextChanged(object sender, EventArgs e)
     {
         double dsc = Convert.ToDouble(textBox19.Text);
@@ -218,6 +219,7 @@ public partial class Form1 : Form
         textBox20.Text = precio_des25.ToString();
     }
 
+    // Precio50 con descuento 
     private void textBox21_TextChanged(object sender, EventArgs e)
     {
         double dsc = Convert.ToDouble(textBox19.Text);
@@ -226,6 +228,7 @@ public partial class Form1 : Form
         textBox21.Text = precio_des25.ToString();
     }
 
+    // Precio100 con descuento 
     private void textBox22_TextChanged(object sender, EventArgs e)
     {
         double dsc = Convert.ToDouble(textBox19.Text);
