@@ -57,6 +57,7 @@ public partial class Form1 : Form
             textBox13.Text = costo_comida.ToString();
 
             // Actualizar Parametros de Rendimiento
+            textBox7_TextChanged(sender, e);
            
         }   
     }
@@ -67,9 +68,8 @@ public partial class Form1 : Form
         
         if (double.TryParse(textBox2.Text, out double d) || int.TryParse(textBox2.Text, out int i))
         {
-            
-            double precio_dep = Convert.ToDouble(textBox2.Text) * 0.25;
-            textBox3.Text = precio_dep.ToString();   
+
+            textBox3_TextChanged(sender, e);   
         }
         else
         {
@@ -81,7 +81,7 @@ public partial class Form1 : Form
     // Precio depreciacion
     private void textBox3_TextChanged(object sender, EventArgs e)
     {
-       
+        textBox3.Text = Convert.ToString(Convert.ToDouble(textBox2.Text) * 0.25);
     }
 
     // Rendimiento descargado
@@ -114,7 +114,12 @@ public partial class Form1 : Form
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
     {
-        
+        double trayectoria = Convert.ToDouble(textBox1.Text);
+        double rend_descargado = Convert.ToDouble(textBox11.Text);
+        double rend25 = Convert.ToDouble(textBox10.Text);
+        double precio_diesel = Convert.ToDouble(textBox2.Text);
+        double precio_dep = Convert.ToDouble(textBox3.Text);
+        textBox7.Text = Convert.ToString(trayectoria/rend25*(precio_diesel+precio_dep) + trayectoria/rend_descargado*(precio_diesel+precio_dep));
     }
 
     // Costo 50% Retorno 0
