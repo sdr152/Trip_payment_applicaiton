@@ -174,7 +174,7 @@ partial class Form1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 108);
+            this.label6.Location = new System.Drawing.Point(6, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 3;
@@ -284,7 +284,7 @@ partial class Form1
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(223, 136);
+            this.textBox8.Location = new System.Drawing.Point(234, 136);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(110, 23);
@@ -294,7 +294,7 @@ partial class Form1
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(223, 100);
+            this.textBox9.Location = new System.Drawing.Point(234, 100);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(110, 23);
@@ -304,7 +304,7 @@ partial class Form1
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(223, 62);
+            this.textBox10.Location = new System.Drawing.Point(234, 62);
             this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(110, 23);
@@ -314,7 +314,7 @@ partial class Form1
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(223, 23);
+            this.textBox11.Location = new System.Drawing.Point(234, 23);
             this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(110, 23);
@@ -354,7 +354,7 @@ partial class Form1
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(10, 144);
+            this.label16.Location = new System.Drawing.Point(6, 144);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(109, 15);
             this.label16.TabIndex = 1;
@@ -567,7 +567,7 @@ partial class Form1
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Location = new System.Drawing.Point(10, 219);
+            this.groupBox2.Location = new System.Drawing.Point(10, 200);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(372, 183);
             this.groupBox2.TabIndex = 29;
