@@ -10,10 +10,7 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
-        textBox18.Enabled = false;
-        textBox3.AccessibleDescription = "SAFSDFASDFASDFASDFASDfas";
-        
-        
+        textBox18.Enabled = false; 
     }
     private void button1_Click_1(object sender, EventArgs e)
     {
@@ -30,7 +27,6 @@ public partial class Form1 : Form
         textBox14_TextChanged(sender, e);
         textBox15_TextChanged(sender, e);
         textBox4_TextChanged(sender, e);
-        
         textBox16_TextChanged_1(sender, e);
         textBox17_TextChanged(sender, e);
         textBox18_TextChanged(sender, e);
@@ -89,13 +85,13 @@ public partial class Form1 : Form
     // Precio depreciacion
     private void textBox3_TextChanged(object sender, EventArgs e)
     {
-        textBox3.Text = Convert.ToString(Convert.ToDouble(textBox2.Text) * 0.25);
+        textBox3.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox2.Text) * 0.25, 2));
     }
 
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
-        textBox11.Text = "25.6";
+        textBox11.Text = "25.60";
         textBox10_TextChanged(sender, e);
         textBox9_TextChanged(sender, e);
         textBox8_TextChanged(sender, e);
@@ -104,19 +100,19 @@ public partial class Form1 : Form
     // Rendimiento 25%
     private void textBox10_TextChanged(object sender, EventArgs e)
     {
-        textBox10.Text = Convert.ToString(Convert.ToDouble(textBox11.Text) * 0.9);
+        textBox10.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.9, 2));
     }
 
     // Rendimiento 50%
     private void textBox9_TextChanged(object sender, EventArgs e)
     {
-        textBox9.Text = Convert.ToString(Convert.ToDouble(textBox11.Text) * 0.7);
+        textBox9.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2));
     }
 
     // Rendimiento 100%
     private void textBox8_TextChanged(object sender, EventArgs e)
     {
-        textBox8.Text = Convert.ToString(9.0 * 1.6);
+        textBox8.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
     }
 
     // Costo 25% Retorno 0
@@ -127,7 +123,8 @@ public partial class Form1 : Form
         double rend25 = Convert.ToDouble(textBox10.Text);
         double precio_diesel = Convert.ToDouble(textBox2.Text);
         double precio_dep = Convert.ToDouble(textBox3.Text);
-        textBox7.Text = Convert.ToString(trayectoria/rend25*(precio_diesel+precio_dep) + trayectoria/rend_descargado*(precio_diesel+precio_dep));
+        double cost25 = Math.Round(trayectoria / rend25 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox7.Text = cost25.ToString();
     }
 
     // Costo 50% Retorno 0
@@ -138,7 +135,8 @@ public partial class Form1 : Form
         double rend50 = Convert.ToDouble(textBox9.Text);
         double precio_diesel = Convert.ToDouble(textBox2.Text);
         double precio_dep = Convert.ToDouble(textBox3.Text);
-        textBox6.Text = Convert.ToString(trayectoria / rend50 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep));
+        double cost50 = Math.Round(trayectoria / rend50 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox6.Text = cost50.ToString();
 
     }
 
@@ -150,7 +148,8 @@ public partial class Form1 : Form
         double rend100 = Convert.ToDouble(textBox8.Text);
         double precio_diesel = Convert.ToDouble(textBox2.Text);
         double precio_dep = Convert.ToDouble(textBox3.Text);
-        textBox5.Text = Convert.ToString(trayectoria / rend100 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep));
+        double cost100 = Math.Round(trayectoria / rend100 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox5.Text = cost100.ToString();
     }
 
     // Costo total al 0 - 25%
@@ -159,7 +158,7 @@ public partial class Form1 : Form
         double cost25 = Convert.ToDouble(textBox7.Text);
         double costo_operario = Convert.ToDouble(textBox12.Text);
         double costo_comida = Convert.ToDouble(textBox13.Text);
-        double costo_total25 = cost25 + costo_operario + costo_comida;
+        double costo_total25 = Math.Round(cost25 + costo_operario + costo_comida, 2);
         textBox14.Text = costo_total25.ToString();
     }
 
@@ -169,7 +168,7 @@ public partial class Form1 : Form
         double cost50 = Convert.ToDouble(textBox6.Text);
         double costo_operario = Convert.ToDouble(textBox12.Text);
         double costo_comida = Convert.ToDouble(textBox13.Text);
-        double costo_total25 = cost50 + costo_operario + costo_comida;
+        double costo_total25 = Math.Round(cost50 + costo_operario + costo_comida, 2);
         textBox15.Text = costo_total25.ToString();
     }
 
@@ -179,7 +178,7 @@ public partial class Form1 : Form
         double cost100 = Convert.ToDouble(textBox5.Text);
         double costo_operario = Convert.ToDouble(textBox12.Text);
         double costo_comida = Convert.ToDouble(textBox13.Text);
-        double costo_total25 = cost100 + costo_operario + costo_comida;
+        double costo_total25 = Math.Round(cost100 + costo_operario + costo_comida, 2);
         textBox4.Text = costo_total25.ToString();
     }
 
@@ -187,28 +186,28 @@ public partial class Form1 : Form
     private void textBox12_TextChanged(object sender, EventArgs e)
     {
         // Actualizar Costo Operario y Costo Comida
-        double costo_operario = 850.0 / 350.0 * Convert.ToDouble(textBox1.Text);
+        double costo_operario = Math.Round(850.0 / 350.0 * Convert.ToDouble(textBox1.Text), 2);
         textBox12.Text = costo_operario.ToString();
     }
 
     // Costo comida por dia
     private void textBox13_TextChanged(object sender, EventArgs e)
     {
-        double costo_comida = 200.0 / 350.0 * Convert.ToDouble(textBox1.Text);
+        double costo_comida = Math.Round(200.0 / 350.0 * Convert.ToDouble(textBox1.Text), 2);
         textBox13.Text = costo_comida.ToString();
     }
 
     // Cobrar 0 - 25
     private void textBox16_TextChanged_1(object sender, EventArgs e)
     {
-        double cobro25 = Convert.ToDouble(textBox14.Text) / 0.7;
+        double cobro25 = Math.Round(Convert.ToDouble(textBox14.Text) / 0.7, 2);
         textBox16.Text = cobro25.ToString();
     }
 
     // Cobrar 25 - 50
     private void textBox17_TextChanged(object sender, EventArgs e)
     {
-        double cobro50 = Convert.ToDouble(textBox15.Text) / 0.7;
+        double cobro50 = Math.Round(Convert.ToDouble(textBox15.Text) / 0.7, 2);
         textBox17.Text = cobro50.ToString();
         textBox18_TextChanged(sender, e);
     }
@@ -216,7 +215,7 @@ public partial class Form1 : Form
     // Cobrar 100
     private void textBox18_TextChanged(object sender, EventArgs e)
     {
-        double cobro100 = Convert.ToDouble(textBox4.Text) / 0.7;
+        double cobro100 = Math.Round(Convert.ToDouble(textBox4.Text) / 0.7, 2);
         textBox18.Text = cobro100.ToString();
     }
     
@@ -235,7 +234,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double cobro25 = Convert.ToDouble(textBox16.Text);
-        double precio_des25 = cobro25 * (1.0 - (dsc / 100));
+        double precio_des25 = Math.Round(cobro25 * (1.0 - (dsc / 100)), 2);
         textBox20.Text = precio_des25.ToString();
     }
 
@@ -244,7 +243,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double cobro50 = Convert.ToDouble(textBox17.Text);
-        double precio_des25 = cobro50 * (1.0 - (dsc / 100));
+        double precio_des25 = Math.Round(cobro50 * (1.0 - (dsc / 100)), 2);
         textBox21.Text = precio_des25.ToString();
     }
 
@@ -253,7 +252,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double cobro100 = Convert.ToDouble(textBox18.Text);
-        double precio_des25 = cobro100 * (1.0 - (dsc / 100));
+        double precio_des25 = Math.Round(cobro100 * (1.0 - (dsc / 100)), 2);
         textBox22.Text = precio_des25.ToString();
     }
 }
