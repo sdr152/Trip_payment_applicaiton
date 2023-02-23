@@ -34,7 +34,6 @@ public partial class Form1 : Form
         textBox20_TextChanged(sender, e);
         textBox21_TextChanged(sender, e);
         textBox22_TextChanged(sender, e);
-
     }
 
     private void label2_Click(object sender, EventArgs e)
@@ -57,7 +56,7 @@ public partial class Form1 : Form
         
     }
 
-    // Trayectoria km
+    // Trayectoria km carretera
     private void textBox1_TextChanged(object sender, EventArgs e)
     {
         string trayecto = textBox1.Text;
@@ -254,6 +253,37 @@ public partial class Form1 : Form
         double cobro100 = Convert.ToDouble(textBox18.Text);
         double precio_des25 = Math.Round(cobro100 * (1.0 - (dsc / 100)), 2);
         textBox22.Text = precio_des25.ToString();
+    }
+
+    //////////////////////////////////////////////////////////////////////////
+    // Trayecto km CIUDAD
+    private void textBox23_TextChanged(object sender, EventArgs e)
+    {
+        string trayecto = textBox23.Text;
+        if (!double.TryParse(trayecto, out double d))
+        {
+            textBox23.Text = "0.0";
+        }
+    }
+
+    // Precio Diesel CIUDAD
+    private void textBox24_TextChanged(object sender, EventArgs e)
+    {
+        string precio_diesel = textBox24.Text;
+        if (!double.TryParse(precio_diesel, out double d))
+        {
+            textBox24.Text = "0.0";
+        }
+        else
+        {
+            textBox25_TextChanged(sender, e);
+        }
+    }
+
+    // Precio Depreciacion CIUDAD
+    private void textBox25_TextChanged(object sender, EventArgs e)
+    {
+        textBox25.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox24.Text) * 0.25, 2));
     }
 }
 
