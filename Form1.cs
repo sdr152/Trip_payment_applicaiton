@@ -81,6 +81,26 @@ public partial class Form1 : Form
         }
     }
 
+    // Costo operario por dia
+    private void textBox12_TextChanged(object sender, EventArgs e)
+    {
+        string costo_operario = textBox12.Text;
+        if (!double.TryParse(costo_operario, out double d))
+        {
+            textBox12.Text = "0.0";
+        }
+    }
+
+    // Costo comida por dia
+    private void textBox13_TextChanged(object sender, EventArgs e)
+    {
+        string costo_comida = textBox13.Text;
+        if (!double.TryParse(costo_comida, out double d))
+        {
+            textBox13.Text = "0.0";
+        }
+    }
+
     // Precio depreciacion
     private void textBox3_TextChanged(object sender, EventArgs e)
     {
@@ -181,21 +201,6 @@ public partial class Form1 : Form
         textBox4.Text = costo_total25.ToString();
     }
 
-    // Costo operario por dia
-    private void textBox12_TextChanged(object sender, EventArgs e)
-    {
-        // Actualizar Costo Operario y Costo Comida
-        double costo_operario = Math.Round(850.0 / 350.0 * Convert.ToDouble(textBox1.Text), 2);
-        textBox12.Text = costo_operario.ToString();
-    }
-
-    // Costo comida por dia
-    private void textBox13_TextChanged(object sender, EventArgs e)
-    {
-        double costo_comida = Math.Round(200.0 / 350.0 * Convert.ToDouble(textBox1.Text), 2);
-        textBox13.Text = costo_comida.ToString();
-    }
-
     // Cobrar 0 - 25
     private void textBox16_TextChanged_1(object sender, EventArgs e)
     {
@@ -285,5 +290,47 @@ public partial class Form1 : Form
     {
         textBox25.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox24.Text) * 0.25, 2));
     }
+    
+    // Rendimiento descargado CIUDAD
+    private void textBox26_TextChanged(object sender, EventArgs e)
+    {
+        double rend_descargado = Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2);
+        textBox26.Text = rend_descargado.ToString();
+        textBox27_TextChanged(sender, e);
+        textBox28_TextChanged(sender, e);
+        textBox29_TextChanged(sender, e);
+    }
+
+    // Rendimiento 25% CIUDAD
+    private void textBox27_TextChanged(object sender, EventArgs e)
+    {
+        textBox27.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox10.Text) * 0.70, 2));
+    }
+
+    // Rendimiento 50% CIUDAD
+    private void textBox28_TextChanged(object sender, EventArgs e)
+    {
+        textBox28.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox9.Text) * 0.70, 2));
+    }
+
+    // Rendimiento 100% CIUDAD
+    private void textBox29_TextChanged(object sender, EventArgs e)
+    {
+        textBox29.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox8.Text) * 0.70, 2));
+    }
+
+    // Costo al 25% Retorno 0 CIUDAD
+    private void textBox30_TextChanged(object sender, EventArgs e)
+    {
+        double rend_descargado = Convert.ToDouble(textBox26.Text);
+        double rend25 = Convert.ToDouble(textBox27.Text);
+        double precio_diesel = Convert.ToDouble(textBox24.Text);
+        double precio_dep = Convert.ToDouble(textBox25.Text);
+        double cost25 = Math.Round(25.0 / rend25 * (precio_diesel + precio_dep) + 25.0 / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox30.Text = cost25.ToString();
+    }
 }
+
+
+
 
