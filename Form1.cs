@@ -69,7 +69,6 @@ public partial class Form1 : Form
     // Precio Diesel galon
     private void textBox2_TextChanged(object sender, EventArgs e)
     {
-        
         if (double.TryParse(textBox2.Text, out double d) || int.TryParse(textBox2.Text, out int i))
         {
             textBox3_TextChanged(sender, e);   
@@ -82,22 +81,22 @@ public partial class Form1 : Form
     }
 
     // Costo operario por dia
-    private void textBox12_TextChanged(object sender, EventArgs e)
-    {
-        string costo_operario = textBox12.Text;
-        if (!double.TryParse(costo_operario, out double d))
-        {
-            textBox12.Text = "0.0";
-        }
-    }
-
-    // Costo comida por dia
     private void textBox13_TextChanged(object sender, EventArgs e)
     {
         string costo_comida = textBox13.Text;
         if (!double.TryParse(costo_comida, out double d))
         {
             textBox13.Text = "0.0";
+        }
+    }
+
+    // Costo comida por dia
+    private void textBox12_TextChanged(object sender, EventArgs e)
+    {
+        string costo_comida = textBox12.Text;
+        if (!double.TryParse(costo_comida, out double d))
+        {
+            textBox12.Text = "0.0";
         }
     }
 
@@ -111,15 +110,15 @@ public partial class Form1 : Form
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
         textBox11.Text = "25.60";
-        textBox10_TextChanged(sender, e);
-        textBox9_TextChanged(sender, e);
         textBox8_TextChanged(sender, e);
+        textBox9_TextChanged(sender, e);
+        textBox10_TextChanged(sender, e);
     }
 
     // Rendimiento 25%
-    private void textBox10_TextChanged(object sender, EventArgs e)
+    private void textBox8_TextChanged(object sender, EventArgs e)
     {
-        textBox10.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.9, 2));
+        textBox8.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.9, 2));
     }
 
     // Rendimiento 50%
@@ -129,10 +128,14 @@ public partial class Form1 : Form
     }
 
     // Rendimiento 100%
-    private void textBox8_TextChanged(object sender, EventArgs e)
+    private void textBox10_TextChanged(object sender, EventArgs e)
     {
-        textBox8.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
+        textBox10.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
     }
+
+    
+
+    
 
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)

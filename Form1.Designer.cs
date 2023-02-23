@@ -78,6 +78,8 @@ partial class Form1
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
@@ -87,8 +89,6 @@ partial class Form1
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.textBox37 = new System.Windows.Forms.TextBox();
@@ -98,6 +98,8 @@ partial class Form1
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox43 = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,7 +107,7 @@ partial class Form1
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(11, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 0;
@@ -202,7 +204,7 @@ partial class Form1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 185);
+            this.label7.Location = new System.Drawing.Point(14, 179);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 20);
             this.label7.TabIndex = 8;
@@ -231,7 +233,7 @@ partial class Form1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(486, 218);
+            this.label10.Location = new System.Drawing.Point(486, 219);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(163, 20);
             this.label10.TabIndex = 2;
@@ -262,7 +264,7 @@ partial class Form1
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(741, 246);
+            this.textBox4.Location = new System.Drawing.Point(741, 245);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(68, 27);
             this.textBox4.TabIndex = 14;
@@ -298,7 +300,7 @@ partial class Form1
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(226, 181);
+            this.textBox8.Location = new System.Drawing.Point(226, 83);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(68, 27);
             this.textBox8.TabIndex = 14;
@@ -316,7 +318,7 @@ partial class Form1
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(226, 83);
+            this.textBox10.Location = new System.Drawing.Point(226, 181);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(68, 27);
             this.textBox10.TabIndex = 14;
@@ -374,7 +376,7 @@ partial class Form1
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.Location = new System.Drawing.Point(227, 125);
+            this.textBox12.Location = new System.Drawing.Point(226, 168);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(68, 27);
             this.textBox12.TabIndex = 14;
@@ -383,7 +385,7 @@ partial class Form1
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(227, 178);
+            this.textBox13.Location = new System.Drawing.Point(226, 121);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(68, 27);
             this.textBox13.TabIndex = 14;
@@ -392,7 +394,7 @@ partial class Form1
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(741, 174);
+            this.textBox14.Location = new System.Drawing.Point(741, 173);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(68, 27);
             this.textBox14.TabIndex = 14;
@@ -401,7 +403,7 @@ partial class Form1
             // textBox15
             // 
             this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.Location = new System.Drawing.Point(741, 210);
+            this.textBox15.Location = new System.Drawing.Point(741, 211);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(68, 27);
             this.textBox15.TabIndex = 14;
@@ -437,7 +439,7 @@ partial class Form1
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(486, 374);
+            this.label20.Location = new System.Drawing.Point(486, 373);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(115, 20);
             this.label20.TabIndex = 16;
@@ -464,7 +466,7 @@ partial class Form1
             // textBox17
             // 
             this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.Location = new System.Drawing.Point(741, 334);
+            this.textBox17.Location = new System.Drawing.Point(741, 333);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(68, 27);
             this.textBox17.TabIndex = 19;
@@ -473,7 +475,7 @@ partial class Form1
             // textBox18
             // 
             this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.Location = new System.Drawing.Point(741, 366);
+            this.textBox18.Location = new System.Drawing.Point(741, 365);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(68, 27);
             this.textBox18.TabIndex = 20;
@@ -500,7 +502,7 @@ partial class Form1
             // textBox20
             // 
             this.textBox20.BackColor = System.Drawing.Color.White;
-            this.textBox20.Location = new System.Drawing.Point(741, 466);
+            this.textBox20.Location = new System.Drawing.Point(741, 467);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(68, 27);
             this.textBox20.TabIndex = 23;
@@ -583,6 +585,22 @@ partial class Form1
             this.textBox23.Size = new System.Drawing.Size(68, 27);
             this.textBox23.TabIndex = 30;
             this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+            // 
+            // textBox34
+            // 
+            this.textBox34.BackColor = System.Drawing.Color.White;
+            this.textBox34.Location = new System.Drawing.Point(335, 168);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(68, 27);
+            this.textBox34.TabIndex = 41;
+            // 
+            // textBox33
+            // 
+            this.textBox33.BackColor = System.Drawing.Color.White;
+            this.textBox33.Location = new System.Drawing.Point(335, 121);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(68, 27);
+            this.textBox33.TabIndex = 40;
             // 
             // groupBox2
             // 
@@ -677,26 +695,10 @@ partial class Form1
             this.textBox32.Size = new System.Drawing.Size(68, 27);
             this.textBox32.TabIndex = 39;
             // 
-            // textBox33
-            // 
-            this.textBox33.BackColor = System.Drawing.Color.White;
-            this.textBox33.Location = new System.Drawing.Point(335, 125);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(68, 27);
-            this.textBox33.TabIndex = 40;
-            // 
-            // textBox34
-            // 
-            this.textBox34.BackColor = System.Drawing.Color.White;
-            this.textBox34.Location = new System.Drawing.Point(335, 178);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(68, 27);
-            this.textBox34.TabIndex = 41;
-            // 
             // textBox35
             // 
             this.textBox35.BackColor = System.Drawing.Color.White;
-            this.textBox35.Location = new System.Drawing.Point(832, 174);
+            this.textBox35.Location = new System.Drawing.Point(832, 173);
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(68, 27);
             this.textBox35.TabIndex = 42;
@@ -704,7 +706,7 @@ partial class Form1
             // textBox36
             // 
             this.textBox36.BackColor = System.Drawing.Color.White;
-            this.textBox36.Location = new System.Drawing.Point(832, 210);
+            this.textBox36.Location = new System.Drawing.Point(832, 211);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(68, 27);
             this.textBox36.TabIndex = 43;
@@ -712,7 +714,7 @@ partial class Form1
             // textBox37
             // 
             this.textBox37.BackColor = System.Drawing.Color.White;
-            this.textBox37.Location = new System.Drawing.Point(832, 246);
+            this.textBox37.Location = new System.Drawing.Point(832, 245);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(68, 27);
             this.textBox37.TabIndex = 44;
@@ -728,7 +730,7 @@ partial class Form1
             // textBox39
             // 
             this.textBox39.BackColor = System.Drawing.Color.White;
-            this.textBox39.Location = new System.Drawing.Point(832, 334);
+            this.textBox39.Location = new System.Drawing.Point(832, 333);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(68, 27);
             this.textBox39.TabIndex = 46;
@@ -736,7 +738,7 @@ partial class Form1
             // textBox40
             // 
             this.textBox40.BackColor = System.Drawing.Color.White;
-            this.textBox40.Location = new System.Drawing.Point(832, 366);
+            this.textBox40.Location = new System.Drawing.Point(832, 365);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(68, 27);
             this.textBox40.TabIndex = 47;
@@ -765,12 +767,36 @@ partial class Form1
             this.textBox43.Size = new System.Drawing.Size(68, 27);
             this.textBox43.TabIndex = 50;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(151, 17);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(81, 24);
+            this.radioButton1.TabIndex = 51;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Camion";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(238, 17);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(99, 24);
+            this.radioButton2.TabIndex = 52;
+            this.radioButton2.Text = "Automovil";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1371, 676);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox43);
             this.Controls.Add(this.textBox42);
             this.Controls.Add(this.textBox41);
@@ -900,4 +926,6 @@ partial class Form1
     private TextBox textBox41;
     private TextBox textBox42;
     private TextBox textBox43;
+    private RadioButton radioButton1;
+    private RadioButton radioButton2;
 }
