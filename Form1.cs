@@ -109,10 +109,18 @@ public partial class Form1 : Form
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
-        textBox11.Text = "25.60";
+        if (radioButton1.Checked)
+        {
+            textBox11.Text = "25.60";
+        }
+        else
+        {
+            textBox11.Text = "0.0";
+        }
         textBox8_TextChanged(sender, e);
         textBox9_TextChanged(sender, e);
         textBox10_TextChanged(sender, e);
+
     }
 
     // Rendimiento 25%
@@ -132,10 +140,6 @@ public partial class Form1 : Form
     {
         textBox10.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
     }
-
-    
-
-    
 
     // Costo 25% Retorno 0
     private void textBox7_TextChanged(object sender, EventArgs e)
@@ -307,7 +311,7 @@ public partial class Form1 : Form
     // Rendimiento 25% CIUDAD
     private void textBox27_TextChanged(object sender, EventArgs e)
     {
-        textBox27.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox10.Text) * 0.70, 2));
+        textBox27.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox8.Text) * 0.70, 2));
     }
 
     // Rendimiento 50% CIUDAD
@@ -319,7 +323,7 @@ public partial class Form1 : Form
     // Rendimiento 100% CIUDAD
     private void textBox29_TextChanged(object sender, EventArgs e)
     {
-        textBox29.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox8.Text) * 0.70, 2));
+        textBox29.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox10.Text) * 0.70, 2));
     }
 
     // Costo al 25% Retorno 0 CIUDAD
@@ -332,6 +336,33 @@ public partial class Form1 : Form
         double cost25 = Math.Round(25.0 / rend25 * (precio_diesel + precio_dep) + 25.0 / rend_descargado * (precio_diesel + precio_dep), 2);
         textBox30.Text = cost25.ToString();
     }
+
+    private void textBox31_TextChanged(object sender, EventArgs e)
+    {
+        double rend_descargado = Convert.ToDouble(textBox26.Text);
+        double rend50 = Convert.ToDouble(textBox28.Text);
+        double precio_diesel = Convert.ToDouble(textBox24.Text);
+        double precio_dep = Convert.ToDouble(textBox25.Text);
+        double cost25 = Math.Round(25.0 / rend50 * (precio_diesel + precio_dep) + 25.0 / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox31.Text = cost25.ToString();
+    }
+
+    private void textBox32_TextChanged(object sender, EventArgs e)
+    {
+        double rend_descargado = Convert.ToDouble(textBox26.Text);
+        double rend100 = Convert.ToDouble(textBox29.Text);
+        double precio_diesel = Convert.ToDouble(textBox24.Text);
+        double precio_dep = Convert.ToDouble(textBox25.Text);
+        double cost25 = Math.Round(25.0 / rend100 * (precio_diesel + precio_dep) + 25.0 / rend_descargado * (precio_diesel + precio_dep), 2);
+        textBox32.Text = cost25.ToString();
+    }
+
+    // Radio Button Automovil
+    private void radioButton2_CheckedChanged(object sender, EventArgs e)
+    {
+        
+    }
+
 }
 
 
