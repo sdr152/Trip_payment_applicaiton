@@ -146,7 +146,7 @@ public partial class Form1 : Form
     {
         double trayectoria = Convert.ToDouble(textBox1.Text);
         double rend_descargado = Convert.ToDouble(textBox11.Text);
-        double rend25 = Convert.ToDouble(textBox10.Text);
+        double rend25 = Convert.ToDouble(textBox8.Text);
         double precio_diesel = Convert.ToDouble(textBox2.Text);
         double precio_dep = Convert.ToDouble(textBox3.Text);
         double cost25 = Math.Round(trayectoria / rend25 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep), 2);
@@ -171,7 +171,7 @@ public partial class Form1 : Form
     {
         double trayectoria = Convert.ToDouble(textBox1.Text);
         double rend_descargado = Convert.ToDouble(textBox11.Text);
-        double rend100 = Convert.ToDouble(textBox8.Text);
+        double rend100 = Convert.ToDouble(textBox10.Text);
         double precio_diesel = Convert.ToDouble(textBox2.Text);
         double precio_dep = Convert.ToDouble(textBox3.Text);
         double cost100 = Math.Round(trayectoria / rend100 * (precio_diesel + precio_dep) + trayectoria / rend_descargado * (precio_diesel + precio_dep), 2);
@@ -363,6 +363,74 @@ public partial class Form1 : Form
         
     }
 
+    // Costo total al 25%
+    private void textBox35_TextChanged(object sender, EventArgs e)
+    {
+        double costo25 = Convert.ToDouble(textBox30.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        textBox35.Text = costo25.ToString();
+    }
+
+    // Costo total al 50%
+    private void textBox36_TextChanged(object sender, EventArgs e)
+    {
+        double costo50 = Convert.ToDouble(textBox31.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        textBox36.Text = costo50.ToString();
+    }
+
+    // Costo total mas del 50%
+    private void textBox37_TextChanged(object sender, EventArgs e)
+    {
+        double costo100 = Convert.ToDouble(textBox32.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        textBox37.Text = costo100.ToString();
+    }
+
+    // Cobrar 25%
+    private void textBox38_TextChanged(object sender, EventArgs e)
+    {
+        double cobrar25 = Convert.ToDouble(textBox35.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        textBox38.Text = cobrar25.ToString();
+    }
+
+    // Cobrar 50%
+    private void textBox39_TextChanged(object sender, EventArgs e)
+    {
+        double cobrar50 = Convert.ToDouble(textBox36.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        textBox39.Text = cobrar50.ToString();
+    }
+
+    // Cobrar 100%
+    private void textBox40_TextChanged(object sender, EventArgs e)
+    {
+        double cobrar100 = Convert.ToDouble(textBox37.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        textBox40.Text = cobrar100.ToString();
+    }
+
+    // Costo total 25% con descuento 
+    private void textBox41_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double costo25 = Convert.ToDouble(textBox38.Text);
+        double costo_dsc25 = costo25 * (1.0 - (dsc / 100));
+        textBox41.Text = costo_dsc25.ToString();
+    }
+
+    // Costo total 50% con descuento
+    private void textBox42_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double costo50 = Convert.ToDouble(textBox39.Text);
+        double costo_dsc50 = costo50 * (1 - (dsc / 100));
+        textBox42.Text = costo_dsc50.ToString();
+    }
+
+    // Costo total 100% con descuento
+    private void textBox43_TextChanged(object sender, EventArgs e)
+    {
+        double dsc = Convert.ToDouble(textBox19.Text);
+        double costo100 = Convert.ToDouble(textBox40.Text);
+        double costo_dsc100 = costo100 * (1 - (dsc / 100));
+        textBox43.Text = costo_dsc100.ToString();
+    }
 }
 
 

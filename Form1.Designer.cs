@@ -736,6 +736,7 @@ partial class Form1
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(60, 23);
             this.textBox35.TabIndex = 42;
+            this.textBox35.TextChanged += new System.EventHandler(this.textBox35_TextChanged);
             // 
             // textBox36
             // 
@@ -745,6 +746,7 @@ partial class Form1
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(60, 23);
             this.textBox36.TabIndex = 43;
+            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
             // 
             // textBox37
             // 
@@ -754,6 +756,7 @@ partial class Form1
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(60, 23);
             this.textBox37.TabIndex = 44;
+            this.textBox37.TextChanged += new System.EventHandler(this.textBox37_TextChanged);
             // 
             // textBox38
             // 
@@ -763,6 +766,7 @@ partial class Form1
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(60, 23);
             this.textBox38.TabIndex = 45;
+            this.textBox38.TextChanged += new System.EventHandler(this.textBox38_TextChanged);
             // 
             // textBox39
             // 
@@ -772,6 +776,7 @@ partial class Form1
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(60, 23);
             this.textBox39.TabIndex = 46;
+            this.textBox39.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
             // 
             // textBox40
             // 
@@ -781,6 +786,7 @@ partial class Form1
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(60, 23);
             this.textBox40.TabIndex = 47;
+            this.textBox40.TextChanged += new System.EventHandler(this.textBox40_TextChanged);
             // 
             // textBox41
             // 
@@ -790,6 +796,7 @@ partial class Form1
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(60, 23);
             this.textBox41.TabIndex = 48;
+            this.textBox41.TextChanged += new System.EventHandler(this.textBox41_TextChanged);
             // 
             // textBox42
             // 
@@ -799,6 +806,7 @@ partial class Form1
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(60, 23);
             this.textBox42.TabIndex = 49;
+            this.textBox42.TextChanged += new System.EventHandler(this.textBox42_TextChanged);
             // 
             // textBox43
             // 
@@ -808,6 +816,7 @@ partial class Form1
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(60, 23);
             this.textBox43.TabIndex = 50;
+            this.textBox43.TextChanged += new System.EventHandler(this.textBox43_TextChanged);
             // 
             // radioButton1
             // 
