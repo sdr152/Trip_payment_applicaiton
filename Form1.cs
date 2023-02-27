@@ -34,6 +34,20 @@ public partial class Form1 : Form
         textBox20_TextChanged(sender, e);
         textBox21_TextChanged(sender, e);
         textBox22_TextChanged(sender, e);
+
+        textBox26_TextChanged(sender, e);
+        textBox30_TextChanged(sender, e);
+        textBox31_TextChanged(sender, e);
+        textBox32_TextChanged(sender, e);
+        textBox35_TextChanged(sender, e);
+        textBox36_TextChanged(sender, e);
+        textBox37_TextChanged(sender, e);
+        textBox38_TextChanged(sender, e);
+        textBox39_TextChanged(sender, e);
+        textBox40_TextChanged(sender, e);
+        textBox41_TextChanged(sender, e);
+        textBox42_TextChanged(sender, e);
+        textBox43_TextChanged(sender, e);
     }
 
     private void label2_Click(object sender, EventArgs e)
