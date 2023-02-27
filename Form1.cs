@@ -12,9 +12,8 @@ public partial class Form1 : Form
         InitializeComponent();
         textBox18.Enabled = false; 
     }
-    private void button1_Click_1(object sender, EventArgs e)
+    private void update_data(object sender, EventArgs e)
     {
-        //MessageBox.Show("Button Click");
         textBox11_TextChanged(sender, e);
         textBox10_TextChanged(sender, e);
         textBox9_TextChanged(sender, e);
@@ -48,6 +47,11 @@ public partial class Form1 : Form
         textBox41_TextChanged(sender, e);
         textBox42_TextChanged(sender, e);
         textBox43_TextChanged(sender, e);
+    }
+
+    private void button1_Click_1(object sender, EventArgs e)
+    {
+        update_data(sender, e);   
     }
 
     private void label2_Click(object sender, EventArgs e)
