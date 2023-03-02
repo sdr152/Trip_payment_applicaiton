@@ -10,7 +10,84 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
-        textBox18.Enabled = false; 
+        disable_all();
+        
+    }
+    
+    private void enable_all()
+    {
+        textBox11.Enabled = true;
+        textBox10.Enabled = true;
+        textBox9.Enabled = true;
+        textBox8.Enabled = true;
+        textBox7.Enabled = true;
+        textBox6.Enabled = true;
+        textBox5.Enabled = true;
+        textBox14.Enabled = true;
+        textBox15.Enabled = true;
+        textBox4.Enabled = true;
+        textBox3.Enabled = true;
+        textBox16.Enabled = true;
+        textBox17.Enabled = true;
+        textBox18.Enabled = true;
+        textBox20.Enabled = true;
+        textBox21.Enabled = true;
+        textBox22.Enabled = true;
+        textBox25.Enabled = true;
+        textBox26.Enabled = true;
+        textBox27.Enabled = true;
+        textBox28.Enabled = true;
+        textBox29.Enabled = true;
+        textBox30.Enabled = true;
+        textBox31.Enabled = true;
+        textBox32.Enabled = true;
+        textBox35.Enabled = true;
+        textBox36.Enabled = true;
+        textBox37.Enabled = true;
+        textBox38.Enabled = true;
+        textBox39.Enabled = true;
+        textBox40.Enabled = true;
+        textBox41.Enabled = true;
+        textBox42.Enabled = true;
+        textBox43.Enabled = true;
+    }
+
+    private void disable_all()
+    {
+        textBox11.Enabled = false;
+        textBox10.Enabled = false;
+        textBox9.Enabled = false;
+        textBox8.Enabled = false;
+        textBox7.Enabled = false;
+        textBox6.Enabled = false;
+        textBox5.Enabled = false;
+        textBox14.Enabled = false;
+        textBox15.Enabled = false;
+        textBox3.Enabled = false;
+        textBox4.Enabled = false;
+        textBox16.Enabled = false;
+        textBox17.Enabled = false;
+        textBox18.Enabled = false;
+        textBox20.Enabled = false;
+        textBox21.Enabled = false;
+        textBox22.Enabled = false;
+        textBox25.Enabled = false;
+        textBox26.Enabled = false;
+        textBox27.Enabled = false;
+        textBox28.Enabled = false;
+        textBox29.Enabled = false;
+        textBox30.Enabled = false;
+        textBox31.Enabled = false;
+        textBox32.Enabled = false;
+        textBox35.Enabled = false;
+        textBox36.Enabled = false;
+        textBox37.Enabled = false;
+        textBox38.Enabled = false;
+        textBox39.Enabled = false;
+        textBox40.Enabled = false;
+        textBox41.Enabled = false;
+        textBox42.Enabled = false;
+        textBox43.Enabled = false;
     }
     private void update_data(object sender, EventArgs e)
     {
@@ -51,7 +128,8 @@ public partial class Form1 : Form
 
     private void button1_Click_1(object sender, EventArgs e)
     {
-        update_data(sender, e);   
+        update_data(sender, e);
+        enable_all();
     }
 
     private void label2_Click(object sender, EventArgs e)
@@ -81,7 +159,8 @@ public partial class Form1 : Form
         if (!double.TryParse(trayecto, out double d))
         {
             textBox1.Text = "0.0";
-        }  
+        }
+        disable_all();
     }
 
     // Precio Diesel galon
@@ -96,6 +175,7 @@ public partial class Form1 : Form
             textBox2.Text = "0.0";
             textBox3.Text = "0.0";
         }
+        disable_all();
     }
 
     // Costo operario por dia
@@ -106,6 +186,7 @@ public partial class Form1 : Form
         {
             textBox13.Text = "0.0";
         }
+        disable_all();
     }
 
     // Costo comida por dia
@@ -116,6 +197,7 @@ public partial class Form1 : Form
         {
             textBox12.Text = "0.0";
         }
+        disable_all();
     }
 
     // Precio depreciacion
