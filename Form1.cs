@@ -11,15 +11,19 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         disable_all();
-        
+        //radioButton1.Checked = true;
+        radioButton1_CheckedChanged(this, EventArgs.Empty);
+        //button1.Enabled = false;
+
+
     }
     
     private void enable_all()
     {
-        textBox11.Enabled = true;
-        textBox10.Enabled = true;
-        textBox9.Enabled = true;
-        textBox8.Enabled = true;
+        //textBox11.Enabled = true;
+        //textBox10.Enabled = true;
+        //textBox9.Enabled = true;
+        //textBox8.Enabled = true;
         textBox7.Enabled = true;
         textBox6.Enabled = true;
         textBox5.Enabled = true;
@@ -34,10 +38,10 @@ public partial class Form1 : Form
         textBox21.Enabled = true;
         textBox22.Enabled = true;
         textBox25.Enabled = true;
-        textBox26.Enabled = true;
-        textBox27.Enabled = true;
-        textBox28.Enabled = true;
-        textBox29.Enabled = true;
+        //textBox26.Enabled = true;
+        //textBox27.Enabled = true;
+        //textBox28.Enabled = true;
+        //textBox29.Enabled = true;
         textBox30.Enabled = true;
         textBox31.Enabled = true;
         textBox32.Enabled = true;
@@ -54,10 +58,10 @@ public partial class Form1 : Form
 
     private void disable_all()
     {
-        textBox11.Enabled = false;
-        textBox10.Enabled = false;
-        textBox9.Enabled = false;
-        textBox8.Enabled = false;
+        //textBox11.Enabled = false;
+        //textBox10.Enabled = false;
+        //textBox9.Enabled = false;
+        //textBox8.Enabled = false;
         textBox7.Enabled = false;
         textBox6.Enabled = false;
         textBox5.Enabled = false;
@@ -72,10 +76,10 @@ public partial class Form1 : Form
         textBox21.Enabled = false;
         textBox22.Enabled = false;
         textBox25.Enabled = false;
-        textBox26.Enabled = false;
-        textBox27.Enabled = false;
-        textBox28.Enabled = false;
-        textBox29.Enabled = false;
+        //textBox26.Enabled = false;
+        //textBox27.Enabled = false;
+        //textBox28.Enabled = false;
+        //textBox29.Enabled = false;
         textBox30.Enabled = false;
         textBox31.Enabled = false;
         textBox32.Enabled = false;
@@ -88,6 +92,21 @@ public partial class Form1 : Form
         textBox41.Enabled = false;
         textBox42.Enabled = false;
         textBox43.Enabled = false;
+    }
+    private void disable_parameters()
+    {
+        textBox8.Enabled = false;
+        textBox9.Enabled = false;
+        textBox10.Enabled = false;
+        textBox11.Enabled = false;
+    }
+
+    private void enable_parameters()
+    {
+        textBox8.Enabled = true;
+        textBox9.Enabled = true;
+        textBox10.Enabled = true;
+        textBox11.Enabled = true;
     }
     private void update_data(object sender, EventArgs e)
     {
@@ -130,6 +149,7 @@ public partial class Form1 : Form
     {
         update_data(sender, e);
         enable_all();
+
     }
 
     private void label2_Click(object sender, EventArgs e)
@@ -209,36 +229,36 @@ public partial class Form1 : Form
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
-        if (radioButton1.Checked)
-        {
-            textBox11.Text = "25.60";
-        }
-        else
-        {
-            textBox11.Text = "0.0";
-        }
-        textBox8_TextChanged(sender, e);
-        textBox9_TextChanged(sender, e);
-        textBox10_TextChanged(sender, e);
+        //if (radioButton1.Checked)
+        //{
+        //    textBox11.Text = "25.60";
+        //}
+        //else
+        //{
+        //    textBox11.Text = "50.0";
+        //}
+        //textBox8_TextChanged(sender, e);
+        //textBox9_TextChanged(sender, e);
+        //textBox10_TextChanged(sender, e);
 
     }
 
     // Rendimiento 25%
     private void textBox8_TextChanged(object sender, EventArgs e)
     {
-        textBox8.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.9, 2));
+        //textBox8.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.9, 2));
     }
 
     // Rendimiento 50%
     private void textBox9_TextChanged(object sender, EventArgs e)
     {
-        textBox9.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2));
+        //textBox9.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2));
     }
 
     // Rendimiento 100%
     private void textBox10_TextChanged(object sender, EventArgs e)
     {
-        textBox10.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
+        //textBox10.Text = Convert.ToString(Math.Round(9.0 * 1.6, 2));
     }
 
     // Costo 25% Retorno 0
@@ -376,6 +396,7 @@ public partial class Form1 : Form
         {
             textBox23.Text = "0.0";
         }
+        disable_all();
     }
 
     // Precio Diesel CIUDAD
@@ -390,6 +411,7 @@ public partial class Form1 : Form
         {
             textBox25_TextChanged(sender, e);
         }
+        disable_all();
     }
 
     // Precio Depreciacion CIUDAD
@@ -401,29 +423,29 @@ public partial class Form1 : Form
     // Rendimiento descargado CIUDAD
     private void textBox26_TextChanged(object sender, EventArgs e)
     {
-        double rend_descargado = Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2);
-        textBox26.Text = rend_descargado.ToString();
-        textBox27_TextChanged(sender, e);
-        textBox28_TextChanged(sender, e);
-        textBox29_TextChanged(sender, e);
+        //double rend_descargado = Math.Round(Convert.ToDouble(textBox11.Text) * 0.7, 2);
+        //textBox26.Text = rend_descargado.ToString();
+        //textBox27_TextChanged(sender, e);
+        //textBox28_TextChanged(sender, e);
+        //textBox29_TextChanged(sender, e);
     }
 
     // Rendimiento 25% CIUDAD
     private void textBox27_TextChanged(object sender, EventArgs e)
     {
-        textBox27.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox8.Text) * 0.70, 2));
+        //textBox27.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox8.Text) * 0.70, 2));
     }
 
     // Rendimiento 50% CIUDAD
     private void textBox28_TextChanged(object sender, EventArgs e)
     {
-        textBox28.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox9.Text) * 0.70, 2));
+        //textBox28.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox9.Text) * 0.70, 2));
     }
 
     // Rendimiento 100% CIUDAD
     private void textBox29_TextChanged(object sender, EventArgs e)
     {
-        textBox29.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox10.Text) * 0.70, 2));
+        //textBox29.Text = Convert.ToString(Math.Round(Convert.ToDouble(textBox10.Text) * 0.70, 2));
     }
 
     // Costo al 25% Retorno 0 CIUDAD
@@ -455,12 +477,6 @@ public partial class Form1 : Form
         double precio_dep = Convert.ToDouble(textBox25.Text);
         double cost25 = Math.Round(25.0 / rend100 * (precio_diesel + precio_dep) + 25.0 / rend_descargado * (precio_diesel + precio_dep), 2);
         textBox32.Text = cost25.ToString();
-    }
-
-    // Radio Button Automovil
-    private void radioButton2_CheckedChanged(object sender, EventArgs e)
-    {
-        
     }
 
     // Costo total al 25%
@@ -530,6 +546,60 @@ public partial class Form1 : Form
         double costo100 = Convert.ToDouble(textBox40.Text);
         double costo_dsc100 = costo100 * (1 - (dsc / 100));
         textBox43.Text = costo_dsc100.ToString();
+    }
+
+    // Costo operario
+    private void textBox33_TextChanged(object sender, EventArgs e)
+    {
+        string costo_comida = textBox33.Text;
+        if (!double.TryParse(costo_comida, out double d))
+        {
+            textBox33.Text = "0.0";
+        }
+        disable_all();
+    }
+
+    // Costo comida
+    private void textBox34_TextChanged(object sender, EventArgs e)
+    {
+        string costo_comida = textBox34.Text;
+        if (!double.TryParse(costo_comida, out double d))
+        {
+            textBox34.Text = "0.0";
+        }
+        disable_all();
+    }
+
+    // Radio button Camion
+    private void radioButton1_CheckedChanged(object sender, EventArgs e)
+    {
+        textBox11.Text = "25.60";
+        textBox8.Text = "23.04";
+        textBox9.Text = "17.92";
+        textBox10.Text = "14.40";
+
+        textBox26.Text = "17.92";
+        textBox27.Text = "16.13";
+        textBox28.Text = "12.54";
+        textBox29.Text = "10.08";
+
+        disable_all();
+    }
+
+    // Radio Button Automovil
+    private void radioButton2_CheckedChanged(object sender, EventArgs e)
+    {
+        textBox11.Text = "50.0";
+        textBox8.Text = "0.0";
+        textBox9.Text = "0.0";
+        textBox10.Text = "30.0";
+
+        textBox26.Text = "50.0";
+        textBox27.Text = "0.0";
+        textBox28.Text = "0.0";
+        textBox29.Text = "30.0";
+
+        disable_all();
     }
 }
 
