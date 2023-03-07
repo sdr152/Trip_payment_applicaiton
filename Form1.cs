@@ -227,25 +227,37 @@ public partial class Form1 : Form
     // Rendimiento descargado
     private void textBox11_TextChanged(object sender, EventArgs e)
     {
-
+        if (!double.TryParse(textBox11.Text, out double d))
+        {
+            textBox11.Text = "25.60";
+        }
     }
 
     // Rendimiento 25%
     private void textBox8_TextChanged(object sender, EventArgs e)
     {
-       
+        if (!double.TryParse(textBox8.Text, out double d))
+        {
+            textBox8.Text = "23.04";
+        }
     }
 
     // Rendimiento 50%
     private void textBox9_TextChanged(object sender, EventArgs e)
     {
-        
+        if (!double.TryParse(textBox9.Text, out double d))
+        {
+            textBox9.Text = "17.92";
+        }
     }
 
     // Rendimiento 100%
     private void textBox10_TextChanged(object sender, EventArgs e)
     {
-        
+        if (!double.TryParse(textBox10.Text, out double d))
+        {
+            textBox10.Text = "14.40";
+        }
     }
 
     // Costo 25% Retorno 0
@@ -411,25 +423,37 @@ public partial class Form1 : Form
     // Rendimiento descargado CIUDAD
     private void textBox26_TextChanged(object sender, EventArgs e)
     {
-       
+        if (!double.TryParse(textBox26.Text, out double d))
+        {
+            textBox26.Text = "17.92";
+        }
     }
 
     // Rendimiento 25% CIUDAD
     private void textBox27_TextChanged(object sender, EventArgs e)
     {
-        
+        if (!double.TryParse(textBox27.Text, out double d))
+        {
+            textBox27.Text = "16.13";
+        }
     }
 
     // Rendimiento 50% CIUDAD
     private void textBox28_TextChanged(object sender, EventArgs e)
     {
-       
+        if (!double.TryParse(textBox28.Text, out double d))
+        {
+            textBox28.Text = "12.54";
+        }
     }
 
     // Rendimiento 100% CIUDAD
     private void textBox29_TextChanged(object sender, EventArgs e)
     {
-        
+        if (!double.TryParse(textBox29.Text, out double d))
+        {
+            textBox29.Text = "10.08";
+        }
     }
 
     // Costo al 25% Retorno 0 CIUDAD

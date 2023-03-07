@@ -1,0 +1,2 @@
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\publish\win-x86\GuiDemo.pdb
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\publish\win-x86\GuiDemo.exe
