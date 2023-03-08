@@ -31,6 +31,16 @@ public partial class Form1 : Form
         textBox24.SelectAll();
         textBox33.SelectAll();
         textBox34.SelectAll();
+
+        textBox5.Hide();
+        textBox6.Hide();
+        textBox7.Hide();
+        textBox30.Hide();
+        textBox31.Hide();
+        textBox32.Hide();
+        label13.Hide();
+        label14.Hide();
+        label15.Hide();
     }
     
     private void enable_all()
@@ -229,7 +239,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox11.Text, out double d))
         {
-            textBox11.Text = "25.60";
+            textBox11.Text = "0.0";
         }
     }
 
@@ -238,7 +248,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox8.Text, out double d))
         {
-            textBox8.Text = "23.04";
+            textBox8.Text = "0.0";
         }
     }
 
@@ -247,7 +257,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox9.Text, out double d))
         {
-            textBox9.Text = "17.92";
+            textBox9.Text = "0.0";
         }
     }
 
@@ -256,7 +266,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox10.Text, out double d))
         {
-            textBox10.Text = "14.40";
+            textBox10.Text = "0.0";
         }
     }
 
@@ -425,7 +435,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox26.Text, out double d))
         {
-            textBox26.Text = "17.92";
+            textBox26.Text = "0.0";
         }
     }
 
@@ -434,7 +444,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox27.Text, out double d))
         {
-            textBox27.Text = "16.13";
+            textBox27.Text = "0.0";
         }
     }
 
@@ -443,7 +453,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox28.Text, out double d))
         {
-            textBox28.Text = "12.54";
+            textBox28.Text = "0.0";
         }
     }
 
@@ -452,7 +462,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox29.Text, out double d))
         {
-            textBox29.Text = "10.08";
+            textBox29.Text = "0.0";
         }
     }
 
