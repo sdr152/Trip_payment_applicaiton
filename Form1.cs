@@ -619,6 +619,16 @@ public partial class Form1 : Form
 
         disable_all();
     }
+
+    private void pictureBox1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label7_Click(object sender, EventArgs e)
+    {
+
+    }
 }
 
 
