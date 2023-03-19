@@ -120,6 +120,8 @@ partial class Form1
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(357, 337);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -127,7 +129,7 @@ partial class Form1
             this.button1.Size = new System.Drawing.Size(145, 22);
             this.button1.TabIndex = 0;
             this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
@@ -255,9 +257,9 @@ partial class Form1
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(323, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(223, 37);
+            this.label12.Size = new System.Drawing.Size(249, 37);
             this.label12.TabIndex = 13;
-            this.label12.Text = "COBRO DE VIAJE";
+            this.label12.Text = "CALCULO DE FLETE";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox4
