@@ -16,3 +16,7 @@ C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows
 C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows\GuiDemo.pdb
 C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows\GuiDemo.genruntimeconfig.cache
 C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows\ref\GuiDemo.dll
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\GuiDemo.dll.manifest
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\GuiDemo.application
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows\GuiDemo.dll.manifest
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\obj\Release\net7.0-windows\GuiDemo.application

@@ -111,6 +111,9 @@ partial class Form1
             this.label35 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -275,7 +278,7 @@ partial class Form1
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(648, 107);
+            this.textBox5.Location = new System.Drawing.Point(730, 51);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(60, 23);
@@ -285,7 +288,7 @@ partial class Form1
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(648, 81);
+            this.textBox6.Location = new System.Drawing.Point(730, 25);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(60, 23);
@@ -295,7 +298,7 @@ partial class Form1
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(648, 55);
+            this.textBox7.Location = new System.Drawing.Point(730, -1);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(60, 23);
@@ -345,7 +348,7 @@ partial class Form1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(500, 55);
+            this.label13.Location = new System.Drawing.Point(582, -1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(142, 15);
             this.label13.TabIndex = 1;
@@ -355,7 +358,7 @@ partial class Form1
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(500, 81);
+            this.label14.Location = new System.Drawing.Point(582, 25);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(142, 15);
             this.label14.TabIndex = 2;
@@ -365,7 +368,7 @@ partial class Form1
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(459, 102);
+            this.label15.Location = new System.Drawing.Point(541, 46);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(183, 15);
             this.label15.TabIndex = 3;
@@ -715,7 +718,7 @@ partial class Form1
             // textBox30
             // 
             this.textBox30.BackColor = System.Drawing.Color.White;
-            this.textBox30.Location = new System.Drawing.Point(728, 55);
+            this.textBox30.Location = new System.Drawing.Point(810, -1);
             this.textBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(60, 23);
@@ -725,7 +728,7 @@ partial class Form1
             // textBox31
             // 
             this.textBox31.BackColor = System.Drawing.Color.White;
-            this.textBox31.Location = new System.Drawing.Point(728, 81);
+            this.textBox31.Location = new System.Drawing.Point(810, 25);
             this.textBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(60, 23);
@@ -735,7 +738,7 @@ partial class Form1
             // textBox32
             // 
             this.textBox32.BackColor = System.Drawing.Color.White;
-            this.textBox32.Location = new System.Drawing.Point(728, 107);
+            this.textBox32.Location = new System.Drawing.Point(810, 51);
             this.textBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(60, 23);
@@ -836,7 +839,7 @@ partial class Form1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 324);
+            this.radioButton1.Location = new System.Drawing.Point(447, 246);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(67, 19);
@@ -849,7 +852,7 @@ partial class Form1
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(98, 324);
+            this.radioButton2.Location = new System.Drawing.Point(527, 246);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(81, 19);
@@ -985,12 +988,41 @@ partial class Form1
             this.label11.TabIndex = 57;
             this.label11.Text = "Carretera";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(22, 314);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(62, 15);
+            this.label22.TabIndex = 59;
+            this.label22.Text = "Ganancia: ";
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(236, 310);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.Size = new System.Drawing.Size(60, 23);
+            this.textBox44.TabIndex = 60;
+            this.textBox44.TextChanged += new System.EventHandler(this.textBox44_TextChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(298, 318);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(17, 15);
+            this.label23.TabIndex = 61;
+            this.label23.Text = "%";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.textBox44);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox4);
@@ -1121,4 +1153,7 @@ partial class Form1
     private Label label17;
     private Label label19;
     private Label label20;
+    private Label label22;
+    private TextBox textBox44;
+    private Label label23;
 }

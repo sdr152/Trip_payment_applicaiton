@@ -1,0 +1,5 @@
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\app.publish\GuiDemo.exe
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\app.publish\GuiDemo.dll
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\app.publish\GuiDemo.deps.json
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\app.publish\GuiDemo.runtimeconfig.json
+C:\Users\Samuel Ramos\CSharp\Trip_payment_application\bin\Release\net7.0-windows\app.publish\GuiDemo.pdb

@@ -15,7 +15,8 @@ public partial class Form1 : Form
         textBox2_TextChanged(this, EventArgs.Empty);
         textBox13_TextChanged(this, EventArgs.Empty);
         textBox12_TextChanged(this, EventArgs.Empty);
-        
+        textBox44_TextChanged(this, EventArgs.Empty);
+
         textBox23_TextChanged(this, EventArgs.Empty);
         textBox24_TextChanged(this, EventArgs.Empty);
         textBox33_TextChanged(this, EventArgs.Empty);
@@ -186,7 +187,7 @@ public partial class Form1 : Form
         string trayecto = textBox1.Text;
         if (!double.TryParse(trayecto, out double d))
         {
-            textBox1.Text = "0.0";
+            textBox1.Text = "0";
         }
         disable_all();
     }
@@ -200,8 +201,8 @@ public partial class Form1 : Form
         }
         else
         {
-            textBox2.Text = "0.0";
-            textBox3.Text = "0.0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
         }
         disable_all();
     }
@@ -212,7 +213,7 @@ public partial class Form1 : Form
         string costo_comida = textBox13.Text;
         if (!double.TryParse(costo_comida, out double d))
         {
-            textBox13.Text = "0.0";
+            textBox13.Text = "0";
         }
         disable_all();
     }
@@ -223,7 +224,7 @@ public partial class Form1 : Form
         string costo_comida = textBox12.Text;
         if (!double.TryParse(costo_comida, out double d))
         {
-            textBox12.Text = "0.0";
+            textBox12.Text = "0";
         }
         disable_all();
     }
@@ -239,7 +240,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox11.Text, out double d))
         {
-            textBox11.Text = "0.0";
+            textBox11.Text = "0";
         }
     }
 
@@ -248,7 +249,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox8.Text, out double d))
         {
-            textBox8.Text = "0.0";
+            textBox8.Text = "0";
         }
     }
 
@@ -257,7 +258,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox9.Text, out double d))
         {
-            textBox9.Text = "0.0";
+            textBox9.Text = "0";
         }
     }
 
@@ -266,7 +267,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox10.Text, out double d))
         {
-            textBox10.Text = "0.0";
+            textBox10.Text = "0";
         }
     }
 
@@ -295,7 +296,7 @@ public partial class Form1 : Form
 
     }
 
-    // Cost a mas de 50% retorno 0
+    // Costo a mas de 50% retorno 0
     private void textBox5_TextChanged(object sender, EventArgs e)
     {
         double trayectoria = Convert.ToDouble(textBox1.Text);
@@ -340,14 +341,16 @@ public partial class Form1 : Form
     // Cobrar 0 - 25
     private void textBox16_TextChanged_1(object sender, EventArgs e)
     {
-        double cobro25 = Math.Round(Convert.ToDouble(textBox14.Text) / 0.7, 2);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double cobro25 = Math.Round(Convert.ToDouble(textBox14.Text) / (1 - ganancia), 2);
         textBox16.Text = cobro25.ToString();
     }
 
     // Cobrar 25 - 50
     private void textBox17_TextChanged(object sender, EventArgs e)
     {
-        double cobro50 = Math.Round(Convert.ToDouble(textBox15.Text) / 0.7, 2);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double cobro50 = Math.Round(Convert.ToDouble(textBox15.Text) / (1 - ganancia), 2);
         textBox17.Text = cobro50.ToString();
         textBox18_TextChanged(sender, e);
     }
@@ -355,7 +358,8 @@ public partial class Form1 : Form
     // Cobrar 100
     private void textBox18_TextChanged(object sender, EventArgs e)
     {
-        double cobro100 = Math.Round(Convert.ToDouble(textBox4.Text) / 0.7, 2);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double cobro100 = Math.Round(Convert.ToDouble(textBox4.Text) / (1 - ganancia), 2);
         textBox18.Text = cobro100.ToString();
     }
     
@@ -365,7 +369,7 @@ public partial class Form1 : Form
         string dsc = textBox19.Text;
         if (!Double.TryParse(dsc, out double d))
         {
-            textBox19.Text = "0.0";
+            textBox19.Text = "0";
         }
         disable_all();
     }
@@ -404,7 +408,7 @@ public partial class Form1 : Form
         string trayecto = textBox23.Text;
         if (!double.TryParse(trayecto, out double d))
         {
-            textBox23.Text = "0.0";
+            textBox23.Text = "0";
         }
         disable_all();
     }
@@ -415,7 +419,7 @@ public partial class Form1 : Form
         string precio_diesel = textBox24.Text;
         if (!double.TryParse(precio_diesel, out double d))
         {
-            textBox24.Text = "0.0";
+            textBox24.Text = "0";
         }
         else
         {
@@ -435,7 +439,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox26.Text, out double d))
         {
-            textBox26.Text = "0.0";
+            textBox26.Text = "0";
         }
     }
 
@@ -444,7 +448,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox27.Text, out double d))
         {
-            textBox27.Text = "0.0";
+            textBox27.Text = "0";
         }
     }
 
@@ -453,7 +457,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox28.Text, out double d))
         {
-            textBox28.Text = "0.0";
+            textBox28.Text = "0";
         }
     }
 
@@ -462,7 +466,7 @@ public partial class Form1 : Form
     {
         if (!double.TryParse(textBox29.Text, out double d))
         {
-            textBox29.Text = "0.0";
+            textBox29.Text = "0";
         }
     }
 
@@ -477,6 +481,7 @@ public partial class Form1 : Form
         textBox30.Text = cost25.ToString();
     }
 
+    // Costo al 50% Retorno 0 CIUDAD
     private void textBox31_TextChanged(object sender, EventArgs e)
     {
         double rend_descargado = Convert.ToDouble(textBox26.Text);
@@ -487,6 +492,7 @@ public partial class Form1 : Form
         textBox31.Text = cost25.ToString();
     }
 
+    // Costo mas del 50% Retorno 0 CIUDAD
     private void textBox32_TextChanged(object sender, EventArgs e)
     {
         double rend_descargado = Convert.ToDouble(textBox26.Text);
@@ -500,42 +506,60 @@ public partial class Form1 : Form
     // Costo total al 25%
     private void textBox35_TextChanged(object sender, EventArgs e)
     {
-        double costo25 = Convert.ToDouble(textBox30.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        double trayectoria = Convert.ToDouble(textBox23.Text);
+        double costo25_retorno = Convert.ToDouble(textBox30.Text);
+        double costo_operario = Convert.ToDouble(textBox33.Text);
+        double costo_comida = Convert.ToDouble(textBox34.Text);
+        double costo25 = Math.Round(trayectoria * (costo25_retorno + costo_operario + costo_comida), 2);
         textBox35.Text = costo25.ToString();
     }
 
     // Costo total al 50%
     private void textBox36_TextChanged(object sender, EventArgs e)
     {
-        double costo50 = Convert.ToDouble(textBox31.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        double trayectoria = Convert.ToDouble(textBox23.Text);
+        double costo50_retorno = Convert.ToDouble(textBox31.Text);
+        double costo_operario = Convert.ToDouble(textBox33.Text);
+        double costo_comida = Convert.ToDouble(textBox34.Text);
+        double costo50 = Math.Round(trayectoria * (costo50_retorno + costo_operario + costo_comida), 2);
         textBox36.Text = costo50.ToString();
     }
 
     // Costo total mas del 50%
     private void textBox37_TextChanged(object sender, EventArgs e)
     {
-        double costo100 = Convert.ToDouble(textBox32.Text) + Convert.ToDouble(textBox33.Text) + Convert.ToDouble(textBox34.Text);
+        double trayectoria = Convert.ToDouble(textBox23.Text);
+        double costo100_retorno = Convert.ToDouble(textBox32.Text);
+        double costo_operario = Convert.ToDouble(textBox33.Text);
+        double costo_comida = Convert.ToDouble(textBox34.Text);
+        double costo100 = Math.Round(trayectoria * (costo100_retorno + costo_operario + costo_comida), 2);
         textBox37.Text = costo100.ToString();
     }
 
     // Cobrar 25%
     private void textBox38_TextChanged(object sender, EventArgs e)
     {
-        double cobrar25 = Convert.ToDouble(textBox35.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double costo_total25 = Convert.ToDouble(textBox35.Text);
+        double cobrar25 = Math.Round(costo_total25 / (1 - ganancia), 2);
         textBox38.Text = cobrar25.ToString();
     }
 
     // Cobrar 50%
     private void textBox39_TextChanged(object sender, EventArgs e)
     {
-        double cobrar50 = Convert.ToDouble(textBox36.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double costo_total50 = Convert.ToDouble(textBox36.Text);
+        double cobrar50 = Math.Round(costo_total50 / (1 - ganancia), 2);
         textBox39.Text = cobrar50.ToString();
     }
 
     // Cobrar 100%
     private void textBox40_TextChanged(object sender, EventArgs e)
     {
-        double cobrar100 = Convert.ToDouble(textBox37.Text) / 0.75 * Convert.ToDouble(textBox23.Text);
+        double ganancia = Convert.ToDouble(textBox44.Text) / 100;
+        double costo_total100 = Convert.ToDouble(textBox37.Text);
+        double cobrar100 = Math.Round(costo_total100 / (1 - ganancia), 2);
         textBox40.Text = cobrar100.ToString();
     }
 
@@ -544,7 +568,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double costo25 = Convert.ToDouble(textBox38.Text);
-        double costo_dsc25 = costo25 * (1.0 - (dsc / 100));
+        double costo_dsc25 = Math.Round(costo25 * (1.0 - (dsc / 100)), 2);
         textBox41.Text = costo_dsc25.ToString();
     }
 
@@ -553,7 +577,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double costo50 = Convert.ToDouble(textBox39.Text);
-        double costo_dsc50 = costo50 * (1 - (dsc / 100));
+        double costo_dsc50 = Math.Round(costo50 * (1 - (dsc / 100)), 2);
         textBox42.Text = costo_dsc50.ToString();
     }
 
@@ -562,7 +586,7 @@ public partial class Form1 : Form
     {
         double dsc = Convert.ToDouble(textBox19.Text);
         double costo100 = Convert.ToDouble(textBox40.Text);
-        double costo_dsc100 = costo100 * (1 - (dsc / 100));
+        double costo_dsc100 = Math.Round(costo100 * (1 - (dsc / 100)), 2);
         textBox43.Text = costo_dsc100.ToString();
     }
 
@@ -572,7 +596,7 @@ public partial class Form1 : Form
         string costo_comida = textBox33.Text;
         if (!double.TryParse(costo_comida, out double d))
         {
-            textBox33.Text = "0.0";
+            textBox33.Text = "0";
         }
         disable_all();
     }
@@ -583,7 +607,7 @@ public partial class Form1 : Form
         string costo_comida = textBox34.Text;
         if (!double.TryParse(costo_comida, out double d))
         {
-            textBox34.Text = "0.0";
+            textBox34.Text = "0";
         }
         disable_all();
     }
@@ -608,15 +632,15 @@ public partial class Form1 : Form
     private void radioButton2_CheckedChanged(object sender, EventArgs e)
     {
         textBox11.Text = "50.0";
-        textBox8.Text = "0.0";
-        textBox9.Text = "0.0";
+        textBox8.Text = "0";
+        textBox9.Text = "0";
         textBox10.Text = "30.0";
 
         textBox26.Text = "50.0";
-        textBox27.Text = "0.0";
-        textBox28.Text = "0.0";
+        textBox27.Text = "0";
+        textBox28.Text = "0";
         textBox29.Text = "30.0";
-
+        
         disable_all();
     }
 
@@ -628,6 +652,16 @@ public partial class Form1 : Form
     private void label7_Click(object sender, EventArgs e)
     {
 
+    }
+
+    private void textBox44_TextChanged(object sender, EventArgs e)
+    {
+        string ganancia = textBox44.Text;
+        if (!double.TryParse(ganancia, out double d))
+        {
+            textBox44.Text = "30.0";
+        }
+        disable_all();
     }
 }
 
